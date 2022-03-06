@@ -10,4 +10,4 @@ LICENSE: [https://github.com/laishulu/Sarasa-Mono-SC-Nerd/blob/master/LICENSE](h
 
 原始来源为[https://weibo.com/p/1006062854077297](https://weibo.com/p/1006062854077297)
 
-图片经过二次修改，侵删
+~~（本项目仅使用了中间的框框）~~
