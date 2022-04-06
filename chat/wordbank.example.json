@@ -1,0 +1,120 @@
+{
+  "format_version": 1,
+  "comment": "请勿手动修改上方格式版本号",
+  "bank": [
+    {
+      "matcher": {
+        "type": "prefix",
+        "keyword": "我",
+        "probability": 25,
+        "atme": false
+      },
+      "reply": {
+        "type": "regex_sub",
+        "pattern": "我",
+        "repl": "你",
+        "count": 0
+      }
+    },
+    {
+      "matcher": {
+        "type": "keyword",
+        "keyword": "老婆"
+      },
+      "reply": {
+        "type": "restricted",
+        "restriction": {
+          "type": "fav",
+          "min_fav": 50
+        },
+        "allow": {
+          "reply": [
+            {
+              "type": "text",
+              "text": "么么哒，最喜欢[你]啦～"
+            },
+            {
+              "type": "image",
+              "filename": "flan_lolicon.jpg"
+            }
+          ],
+          "options": {
+            "fav": {
+              "type": "+",
+              "num": 1,
+              "max_daily": 3,
+              "uuid": "1674f34c-b4ff-49fa-9eac-1e823621783e"
+            }
+          }
+        },
+        "deny": {
+          "reply": [
+            {
+              "type": "text",
+              "text": "老婆怪爪巴"
+            },
+            {
+              "type": "image",
+              "url": "https://github.com/KoishiStudio/Flandre-resources/raw/main/chat/static/flan_fav-1.jpg"
+            }
+          ],
+          "options": {
+            "fav": {
+              "type": "-",
+              "num": 1,
+              "max_daily": 3,
+              "uuid": "c2bbfe10-b1cd-44d6-8afe-5cde74c937d2"
+            }
+          }
+        }
+      }
+    },
+    {
+      "matcher": {
+        "type": "full",
+        "text": "帮助"
+      },
+      "reply": {
+        "type": "text",
+        "text": "要查看帮助，请使用/help命令"
+      }
+    },
+    {
+      "matcher": {
+        "type": "regex",
+        "regex": "([最好真]+)(喜欢|爱)|suki"
+      },
+      "reply": {
+        "type": "restricted",
+        "restriction": {
+          "type": "fav",
+          "min_fav": 25
+        },
+        "allow": {
+          "reply": [
+            {
+              "type": "text",
+              "text": "其实，俺也一样，嘻嘻～"
+            },
+            {
+              "type": "image",
+              "filename": "flan_swing.gif"
+            },
+            {
+              "type": "voice",
+              "filename": "Atri_才不是，是我更喜欢.mp3"
+            }
+          ],
+          "options": {
+            "fav": {
+              "type": "+",
+              "num": 1,
+              "max_daily": 3,
+              "uuid": "759c35b7-2950-48d2-a6bb-338c59313ed6"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
