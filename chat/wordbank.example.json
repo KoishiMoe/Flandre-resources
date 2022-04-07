@@ -6,7 +6,8 @@
       "matcher": {
         "type": "prefix",
         "keyword": "我",
-        "probability": 25
+        "probability": 25,
+        "atme": false
       },
       "reply": {
         "type": "regex_sub",
