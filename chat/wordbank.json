@@ -101,8 +101,8 @@
               "filename": "flan_swing.gif"
             },
             {
-              "type": "voice",
-              "filename": "Atri_才不是，是我更喜欢.mp3"
+              "type": "tts",
+              "filename": "咱也最喜欢你啦～"
             }
           ],
           "options": {
